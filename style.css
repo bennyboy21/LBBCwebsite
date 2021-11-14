@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@media (max-width:499px) {
+    body {
+        background:rgb(15, 15, 15);
+        margin: 0px;
+        padding: 0px;
+    }
+        
+    #hole-Background {
+        width:100vw;
+        height:2200px;
+        overflow: hidden;
+        position:relative;
+        background:rgb(15, 15, 15);
+    }
+
+    #colored-Circle-One {
+        width:500px;
+        height:500px;
+        background:rgb(41, 36, 36);
+        border-radius: 100%;
+        position:absolute;
+        box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.3);
+        top:-150px;
+        left:-70px;
+    }
+
+    #trigger1 {
+        position:absolute;
+        top:51vh;
+    }
+
+    #top-Bar {
+        background:rgb(41, 36, 36);
+        position: fixed;
+        top:0px;
+        left:0px;
+        height:50px;
+        width:100%;
+        transition: 0.25s;
+    }
+
+    #top-Bar.fadeTopBar {
+        box-shadow: 2px 0px 10px 10px rgba(0, 0, 0, 0.3);
+        transition: 0.25s;
+    }
+    
+    #trigger2 {
+        position:absolute;
+        top:515px;
+    }
+
+    #menu-Icon {
+        position:absolute;
+        width:40px;
+        top:calc(100% - 45px);
+        left:calc(100% - 50px);
+    }
+
+    #lightHouse-Icon {
+        width:40px;
+        position:absolute;
+        top:calc(100% - 45px);
+        left:5px;
+    }
+
+    #Logo {
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        font-size: 30px;
+        left:calc(50% - 45px);
+        top: calc(100% - 45px);
+        position:absolute;
+        opacity: 0;
+        transition: .35s ease-in-out;
+    }
+
+    #Logo.animated {
+        opacity: 1;
+        transition: .35s ease-in-out;
+    }
+
+    #church-Name {
+        font-family: 'Rubik', sans-serif;
+        position:absolute;
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        top:200px;
+        left:75px;
+    }
+
+    @media (max-width:325px) {
+        #church-Name {
+            font-size: 40px;
+        }
+    }
+
+    #long-Branch-Holder {
+        width:100%;
+        height:55px;
+        overflow:hidden;
+    }
+
+    #long-Branch {
+        margin-top: 45px;
+        animation: ShowChurchText .55s forwards;
+    }
+
+    #baptist-Church-Holder {
+        width:100%;
+        height:60px;
+        overflow:hidden;
+    }
+
+    #baptist-Church {
+        margin-top: 50px;
+        animation: ShowChurchText .55s forwards .1s;
+    }
+
+    @keyframes ShowChurchText {
+        0% {
+            margin-top: 50px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #church-Sub-Text-Holder {
+        width:100%;
+        height:25px;
+        font-size: 20px;
+        font-family: 'Noto Sans', sans-serif;
+        color: rgb(121, 121, 121);
+        position:absolute;
+        top:320px;
+        left:75px;
+        overflow: hidden;
+    }
+
+    #church-Sub-Text {
+        margin-top: 25px;
+        animation: ShowChurchText .55s forwards .25s;
+    }
+
+    #circle-Two-Button-Holder {
+        width: 0px;
+        position:absolute;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        border-radius: 20px;
+        top:250px;
+        left:80px;
+        overflow:hidden;
+        animation: loadCircleTwoButton .7s forwards .55s ease-in-out;
+    }
+
+    #circle-Two-Button {
+        width:100px;
+    }
+
+    @keyframes loadCircleTwoButton {
+        0% {
+            width:0px;
+            border-right: -2px solid rgb(41, 36, 36);
+            border:2px solid white;
+        }
+
+        50% {
+            border-right: 96px solid rgb(41, 36, 36);
+            width:0px;
+        }
+
+        100% {
+            width:100px;
+            border:2px solid white;
+            border-right: -2px solid rgb(41, 36, 36);
+        }
+    }
+
+
+    #colored-Circle-Two {
+        width:375px;
+        height:375px;
+        background:rgb(41, 36, 36);
+        border-radius: 100%;
+        position:absolute;
+        overflow:hidden;
+        box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.3);
+        top:400px;
+        left:-75px;
+    }
+
+    #sunday-Worship-Image {
+        margin-left: -150px;
+    }
+
+    #sunday-Worship-Live-Stream {
+        font-family: 'Rubik', sans-serif;
+        position:absolute;
+        color: rgb(255, 255, 255);
+        font-size: 33px;
+        top:75px;
+        left:80px;
+    }
+
+    #sunday-Worship-Holder {
+        width:100%;
+        height:40px;
+        overflow:hidden;
+    }
+
+    #sunday-Worship {
+        margin-top: 35px;
+        animation: ShowSudayWorshipText .55s forwards;
+    }
+
+    #live-Stream-Holder {
+        width:100%;
+        height:40px;
+        overflow:hidden;
+    }
+
+    #live-Stream {
+        margin-top: 35px;
+        animation: ShowSudayWorshipText .55s forwards .1s;
+    }
+
+    #worship-Sub-Text-Holder {
+        width:100%;
+        height:25px;
+        font-size: 15.5px;
+        font-family: 'Rubik', sans-serif;
+        color: rgb(121, 121, 121);
+        position:absolute;
+        top:160px;
+        left:80px;
+        overflow: hidden;
+    }
+
+    #worship-Sub-Text {
+        margin-top: 25px;
+        animation: ShowSudayWorshipText .55s forwards .25s;
+    }
+
+    @keyframes ShowSudayWorshipText {
+        0% {
+            margin-top: 35px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #trigger3 {
+        position:absolute;
+        top:860px;
+    }
+
+    #colored-Circle-Three {
+        width:375px;
+        height:375px;
+        background:rgb(41, 36, 36);
+        border-radius: 100%;
+        position:absolute;
+        overflow:hidden;
+        box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.3);
+        top:800px;
+        left:calc(100% - 250px);
+    }
+
+    #youth-Group-Image {
+        margin-left: -10px;
+    }
+
+    #friday-Night-Youth {
+        font-family: 'Rubik', sans-serif;
+        position:absolute;
+        color: rgb(255, 255, 255);
+        font-size: 33px;
+        top:50px;
+        left:50px;
+    }
+
+    #friday-Night-Holder {
+        width:100%;
+        height:40px;
+        overflow:hidden;
+    }
+
+    #friday-Night {
+        margin-top: 35px;
+    }
+
+    #friday-Night.fadeText {
+        animation: ShowYouthGroupText .55s forwards .1s;
+    }
+
+    #youth-Holder {
+        width:100%;
+        height:40px;
+        overflow:hidden;
+    }
+
+    #youth {
+        margin-top: 35px;
+    }
+
+    #youth.fadeText {
+        animation: ShowYouthGroupText .55s forwards .35s;
+    }
+
+    #youth-Sub-Text-Holder {
+        width:100%;
+        height:25px;
+        font-size: 15.5px;
+        font-family: 'Rubik', sans-serif;
+        color: rgb(121, 121, 121);
+        position:absolute;
+        top:130px;
+        left:50px;
+        overflow: hidden;
+    }
+
+    #youth-Sub-Text {
+        margin-top: 25px;
+    }
+    
+    #youth-Sub-Text.fadeText {
+        animation: ShowYouthGroupText .55s forwards .55s;
+    }
+
+    @keyframes ShowYouthGroupText {
+        0% {
+            margin-top: 40px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    #circle-Three-Button-Holder {
+        width: 0px;
+        height:30px;
+        position:absolute;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        top:250px;
+        left:50px;
+        overflow:hidden;
+    }
+
+    #circle-Three-Button-Holder.fadeText {
+        animation: loadCircleThreeButton .7s forwards 1s ease-in-out;
+    }
+
+    #circle-Three-Button {
+        width:100px;
+        position:absolute;
+        left:4px;
+    }
+
+    @keyframes loadCircleThreeButton {
+        0% {
+            width:0px;
+            border-right: -2px solid rgb(255, 255, 255);
+            border:2px solid rgb(255, 255, 255);
+        }
+
+        50% {
+            border-right: 96px solid rgb(255, 255, 255);
+            width:0px;
+        }
+
+        100% {
+            border:2px solid rgb(255, 255, 255);
+            border-right: -2px solid rgb(255, 255, 255);
+            width: 96px;
+        }
+    }
+
+    #menu-Page {
+        width:0px;
+        height:0px;
+        border-radius: 100%;
+        background:rgb(41, 36, 36);
+        position:fixed;
+        top:0px;
+        left:calc(100% - 50px);
+        overflow:hidden;
+    }
+
+    @keyframes ShowMenuPage {
+        0% {
+            width:0px;
+            height:0px;
+        }
+
+        100% { 
+            width:2000px;
+            height:2000px;
+            left:-1000px;
+            top:-100px;
+        }
+    }
+
+    #colored-Circle-Four {
+        width:500px;
+        height:500px;
+        background:rgb(41, 36, 36);
+        border-radius: 100%;
+        position:absolute;
+        overflow:hidden;
+        box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.3);
+        top:1250px;
+        left:-100px;
+    }
+
+    #young-Adults-Image {
+        margin-left:70px;
+        height:500px;
+    }
+
+    #young-Adults-Group {
+        font-family: 'Rubik', sans-serif;
+        position:absolute;
+        color: white;
+        font-size: 45px;
+        top:40px;
+        left:105px;
+    }
+    
+    #young-Adults-Holder {
+        width:100%;
+        height:55px;
+        overflow:hidden;
+    }
+
+    #young-Adults {
+        margin-top: 60px;
+    }
+
+    #young-Adults.fadeText2 {
+        animation: ShowYoungAdultsText .55s forwards .1s;
+    }
+
+    #group-Holder {
+        width:100%;
+        height:55px;
+        overflow:hidden;
+    }
+
+    #group {
+        margin-top: 60px;
+    }
+
+    #group.fadeText2 {
+        animation: ShowYoungAdultsText .55s forwards .35s;
+    }
+
+    #young-Adults-Sub-Text-Holder {
+        width:100%;
+        height:25px;
+        font-size: 15.5px;
+        font-family: 'Rubik', sans-serif;
+        color: rgb(153, 153, 153);
+        position:absolute;
+        top:150px;
+        left:105px;
+        overflow: hidden;
+    }
+
+    #young-Adults-Text {
+        margin-top: 25px;
+    }
+    
+    #young-Adults-Text.fadeText2 {
+        animation: ShowYoungAdultsText .55s forwards .55s;
+    }
+
+    @keyframes ShowYoungAdultsText {
+        0% {
+            margin-top: 60px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+
+    #circle-Four-Button-Holder {
+        width: 0px;
+        height:30px;
+        position:absolute;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        top:270px;
+        left:105px;
+        overflow:hidden;
+    }
+
+    #circle-Four-Button-Holder.fadeText2 {
+        animation: loadCircleFourButton .7s forwards 1s ease-in-out;
+    }
+
+    #circle-Four-Button {
+        width:100px;
+        position:absolute;
+        left:0px;
+    }
+
+    @keyframes loadCircleFourButton {
+        0% {
+            width:0px;
+            border-right: -2px solid rgb(255, 255, 255);
+            border:2px solid rgb(255, 255, 255);
+        }
+
+        50% {
+            border-right: 96px solid rgb(255, 255, 255);
+            width:0px;
+        }
+
+        100% {
+            width:100px;
+            border:2px solid rgb(255, 255, 255);
+            border-right: -2px solid rgb(255, 255, 255);
+        }
+    }
+
+    #trigger4 {
+        position:absolute;
+        top:1305px;
+    }
+
+    #colored-Circle-Five {
+        width:650px;
+        height:650px;
+        background:rgb(41, 36, 36);
+        border-radius: 100%;
+        position:absolute;
+        overflow:hidden;
+        box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.3);
+        top:1800px;
+        left:-75px;
+    }
+
+    #pastors {
+        position:absolute;
+        color: white;
+        font-family: 'Noto Sans', sans-serif;
+        top:105px;
+        left:80px;
+    }
+
+    .pastors-Name {
+        color: rgb(153, 153, 153);
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    #address-Holder {
+        position:absolute;
+        color: white;
+        font-family: 'Noto Sans', sans-serif;
+        top:25px;
+        left:200px;
+    }
+
+    #address {
+        color: rgb(153, 153, 153);
+        width:175px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    #phone-Number-Holder {
+        position:absolute;
+        color: white;
+        font-family: 'Noto Sans', sans-serif;
+        top:105px;
+        left:200px;
+    }
+
+    #phone-Number {
+        color: rgb(153, 153, 153);
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    #change-Pages {
+        width:0px;
+        height:100vh;
+        position:fixed;
+        background:rgb(41, 36, 36);
+        top: 0px;
+        left:0px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes switchPages {
+        0% {
+            width:0px;
+        }
+
+        50% {
+            width:100vw;
+            border-left: 0px solid rgb(15, 15, 15);
+        }
+
+        100% {
+            width:0px;
+            border-left: 100vw solid rgb(15, 15, 15);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:500px) {
+    body {
+        background:rgb(15, 15, 15);
+        margin: 0px;
+        padding: 0px;
+    }
+        
+    #hole-Background {
+        width:98vw;
+        height:100vh;
+        overflow: hidden;
+        position:relative;
+        background:rgb(15, 15, 15);
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
